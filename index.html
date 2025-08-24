@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop Store</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="script.js"  defer></script> -->
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Laptop Store</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to Laptop Store</h2>
+    <p>
+      In today’s digital era, the demand of laptops has increased rapidly due to the growing dependability on technology 
+      for education, work and entertainment. Our project aims to create a user-friendly platform where users can view 
+      different laptop models, compare features, and check prices for a better shopping experience.
+    </p>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop">
+        <h3>HP Pavilion</h3>
+        <p>Price: NPR 106,000</p>
+        <a href="#" class="btn" onclick="openModal('HP Pavilion', 'Intel i5, 8GB RAM, 512GB SSD, 15.6-inch Display', 'NPR 106,000')">View Details</a>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Laptop">
+        <h3>Dell Inspiron</h3>
+        <p>Price: NPR 126,000</p>
+        <a href="#" class="btn" onclick="openModal('Dell Inspiron', 'Intel i7, 16GB RAM, 1TB SSD, 14-inch Display', 'NPR 126,000')">View Details</a>
+      </div>
+
+      <div class="product">
+        <img src="https://i.pinimg.com/1200x/a0/a2/fa/a0a2fa0b8230f0bfd5a783dd2a95ba3b.jpg" alt="Laptop">
+        <h3>MacBook Air</h3>
+        <p>Price: NPR 160,000</p>
+        <a href="#" class="btn" onclick="openModal('MacBook Air', 'Apple M1 Chip, 8GB RAM, 512GB SSD, Retina Display', 'NPR 160,000')">View Details</a>
+      </div>
+
+      <div class="product">
+        <img src="https://i.pinimg.com/1200x/d9/4f/7b/d94f7b2222d32a52842369633787ef2d.jpg" alt="Laptop">
+        <h3>Lenovo ThinkPad X1</h3>
+        <p>Price: NPR 146,000</p>
+        <a href="#" class="btn" onclick="openModal('Lenovo ThinkPad X1', 'Intel i7, 16GB RAM, 512GB SSD, 14-inch Display', 'NPR 146,000')">View Details</a>
+      </div>
+
+      <div class="product">
+        <img src="https://i.pinimg.com/736x/1c/eb/dd/1cebdd4583aaf962915067a9c4fd9061.jpg" alt="Laptop">
+        <h3>Asus ZenBook</h3>
+        <p>Price: NPR 140,000</p>
+        <a href="#" class="btn" onclick="openModal('Asus ZenBook', 'Intel i7, 16GB RAM, 512GB SSD, Ultra-slim design', 'NPR 140,000')">View Details</a>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1587202372775-98927f1a00d5" alt="Laptop">
+        <h3>Acer Aspire 7</h3>
+        <p>Price: NPR 100,000</p>
+        <a href="#" class="btn" onclick="openModal('Acer Aspire 7', 'AMD Ryzen 5, 8GB RAM, 512GB SSD, GTX 1650 Graphics', 'NPR 100,000')">View Details</a>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Laptop">
+        <h3>Microsoft Surface Laptop 4</h3>
+        <p>Price: NPR 173,000</p>
+        <a href="#" class="btn" onclick="openModal('Microsoft Surface Laptop 4', 'Intel i7, 16GB RAM, 512GB SSD, Touchscreen', 'NPR 173,000')">View Details</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="productModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <p id="modalPrice"></p>
+    </div>
+  </div>
+
+    
+    <div style="flex: 1 1 300px; margin-bottom: 20px;">
+      <h2 style="margin-bottom: 15px;">Laptop Store</h2>
+      <p style="line-height: 1.6;">
+        Welcome to Laptop Store – your one-stop destination for the latest laptops at the best prices.
+        We offer a wide range of devices for work, study, and entertainment with fast delivery, easy returns,
+        and a customer-first experience.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex: 1 1 200px; margin-bottom: 20px;">
+      <h3 style="margin-bottom: 10px;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="color: #fff; text-decoration: none;">Home</a></li>
+        <li><a href="#products" style="color: #fff; text-decoration: none;">Products</a></li>
+        <li><a href="#about" style="color: #fff; text-decoration: none;">About</a></li>
+        <li><a href="#contact" style="color: #fff; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div style="flex: 1 1 200px; margin-bottom: 20px;">
+      <h3 style="margin-bottom: 10px;">Support</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
+        <li><a href="#" style="color: #fff; text-decoration: none;">Terms & Conditions</a></li>
+        <li><a href="#" style="color: #fff; text-decoration: none;">Return Policy</a></li>
+        <li><a href="#" style="color: #fff; text-decoration: none;">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div style="flex: 1 1 250px; margin-bottom: 20px;">
+      <h3 style="margin-bottom: 10px;">Contact Us</h3>
+      <p><strong>Phone:</strong> <a  style="color: #fff;">+977-9828999278</a></p>
+      <p><strong>Email:</strong> <a href="laptopstore@gmail.com" style="color: #fff;">laptopstore@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  </div>
+>
+  <footer>
+    <p>&copy; 2025 Laptop Store | All Rights Reserved</p>
+  </footer>
+  <footer style="background: #222; color: #fff; padding: 50px 20px;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+    
+
+
+  </script>
+
+
+</body>
+</html>
